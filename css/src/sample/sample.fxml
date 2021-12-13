@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TabPane fx:id="tabpane">
+         <tabs>
+            <Tab fx:id="tabpane1">
+               <content>
+                  <AnchorPane fx:id="anchorpane" prefHeight="320.0" prefWidth="476.0">
+                     <children>
+                        <Label fx:id="firstname" layoutX="101.0" layoutY="59.0" text="first name:" />
+                        <TextField fx:id="first" layoutX="171.0" layoutY="55.0" />
+                        <Label fx:id="lastname" layoutX="101.0" layoutY="104.0" text="last name:" />
+                        <TextField fx:id="last" layoutX="171.0" layoutY="100.0" />
+                        <Label fx:id="age" layoutX="101.0" layoutY="143.0" text="age:" />
+                        <Slider fx:id="age1" layoutX="168.0" layoutY="152.0" showTickLabels="true" showTickMarks="true" />
+                        <Button fx:id="register" layoutX="210.0" layoutY="251.0" mnemonicParsing="false" text="register" />
+                        <Label fx:id="id" layoutX="99.0" layoutY="190.0" text="Id:" />
+                        <Label fx:id="password" layoutX="96.0" layoutY="221.0" text="password:" />
+                        <TextField fx:id="idtfield" layoutX="164.0" layoutY="186.0" />
+                        <PasswordField fx:id="passwordbox" layoutX="164.0" layoutY="217.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabpane2" text="Untitled Tab">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="id2" layoutX="100.0" layoutY="52.0" text="Id:" />
+                        <Label fx:id="password2" layoutX="62.0" layoutY="99.0" prefHeight="21.0" prefWidth="65.0" text="password:" />
+                        <TextField fx:id="idfield" layoutX="144.0" layoutY="48.0" />
+                        <PasswordField fx:id="passwordfield" layoutX="144.0" layoutY="97.0" />
+                        <Button fx:id="enterbtn" layoutX="193.0" layoutY="178.0" mnemonicParsing="false" text="Enter" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabpane3" text="Untitled Tab">
+              <content>
+                <AnchorPane fx:id="anchorpane3" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="fromx" layoutX="71.0" layoutY="30.0" text="fromx:" />
+                        <Label fx:id="fromy" layoutX="74.0" layoutY="62.0" text="fromy:" />
+                        <Label fx:id="tox" layoutX="77.0" layoutY="98.0" text="tox:" />
+                        <Label fx:id="toy" layoutX="77.0" layoutY="128.0" text="toy:" />
+                        <Label fx:id="lenght" layoutX="73.0" layoutY="160.0" text="lenght:" />
+                        <Label fx:id="widht" layoutX="77.0" layoutY="190.0" text="widht:" />
+                        <Label fx:id="insidecolor" layoutX="68.0" layoutY="220.0" text="insidecolor" />
+                        <Label fx:id="outsidecolor" layoutX="74.0" layoutY="252.0" text="outsidecolor" />
+                        <Slider fx:id="fromxslider" layoutX="156.0" layoutY="32.0" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="fromyslider" layoutX="156.0" layoutY="64.0" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="toxslider" layoutX="156.0" layoutY="100.0" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="toyslider" layoutX="156.0" layoutY="130.0" />
+                        <Slider fx:id="lenghtslider" layoutX="156.0" layoutY="162.0" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="widhtslider" layoutX="156.0" layoutY="192.0" showTickLabels="true" showTickMarks="true" />
+                        <ColorPicker fx:id="insidecolorpicker" layoutX="156.0" layoutY="225.0" />
+                        <ColorPicker fx:id="outsidecolorpicker" layoutX="156.0" layoutY="257.0" />
+                        <Button fx:id="drawbtn" layoutX="366.0" layoutY="225.0" mnemonicParsing="false" text="draw" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</GridPane>

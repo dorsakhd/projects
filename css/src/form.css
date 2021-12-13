@@ -1,0 +1,27 @@
+#firstname{
+    -fx-background-color: blue ;
+    -fx-border-style: solid;
+    -fx-effect: inherit;
+}
+#lastname{
+    -fx-background-color: blue ;
+    -fx-border-style: solid;
+    -fx-effect: inherit;
+}
+#age{
+    -fx-background-color: blue ;
+    -fx-border-style: solid;
+    -fx-effect: inherit;
+}
+#first{
+    -fx-background-color: aqua;
+    -fx-background-radius: 30;
+}
+#last{
+    -fx-background-color: aqua;
+    -fx-background-radius: 30;
+}
+#age1{
+    -fx-background-color: blueviolet;
+}
+
