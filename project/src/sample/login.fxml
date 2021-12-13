@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+   <children>
+      <TabPane fx:id="tabPane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="signupTab" text="signup">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="firstnameLable" layoutX="106.0" layoutY="48.0" text="firstname:" textFill="#6d1d8a">
+                           <font>
+                              <Font name="Algerian" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lastnameLable" layoutX="106.0" layoutY="79.0" text="lastname:" textFill="#750b79">
+                           <font>
+                              <Font name="Algerian" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="usernameLable" layoutX="106.0" layoutY="112.0" text="username:" textFill="#6c1697">
+                           <font>
+                              <Font name="Algerian" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="creatpasswordLable" layoutX="106.0" layoutY="148.0" text="creat password:" textFill="#6e0f83">
+                           <font>
+                              <Font name="Algerian" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="emailLable" layoutX="106.0" layoutY="186.0" text="email:" textFill="#69118a">
+                           <font>
+                              <Font name="Algerian" size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="firstnameField" layoutX="233.0" layoutY="48.0" />
+                        <TextField fx:id="lastnameField" layoutX="233.0" layoutY="79.0" />
+                        <TextField fx:id="usernameField" layoutX="233.0" layoutY="112.0" />
+                        <TextField fx:id="emailField" layoutX="190.0" layoutY="186.0" />
+                        <PasswordField fx:id="creatpasswordField" layoutX="283.0" layoutY="146.0" />
+                        <Button fx:id="registerButton" layoutX="207.0" layoutY="248.0" mnemonicParsing="false" text="register" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="loginTab" text="login">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="username2Lable" layoutX="71.0" layoutY="55.0" text="username:" textFill="#6c1890">
+                           <font>
+                              <Font name="Algerian" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="passwordLable" layoutX="71.0" layoutY="96.0" text="password:" textFill="#881990">
+                           <font>
+                              <Font name="Algerian" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="username2Field" layoutX="185.0" layoutY="54.0" />
+                        <PasswordField fx:id="passwordField" layoutX="185.0" layoutY="95.0" />
+                        <Button fx:id="loginButton" layoutX="208.0" layoutY="161.0" mnemonicParsing="false" text="login" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
