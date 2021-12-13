@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TabPane fx:id="mainpane" prefHeight="478.0" prefWidth="521.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="105.0" layoutY="74.0" text="Rectangle name:" />
+                        <TextField fx:id="nameTF" layoutX="193.0" layoutY="70.0" />
+                        <Label layoutX="105.0" layoutY="116.0" text="Inside color:" />
+                        <Label layoutX="105.0" layoutY="159.0" text="Outside color:" />
+                        <ColorPicker fx:id="insidecolor" layoutX="193.0" layoutY="112.0" />
+                        <ColorPicker fx:id="outsidecolor" layoutX="193.0" layoutY="155.0" />
+                        <Label layoutX="105.0" layoutY="197.0" text="Length:" />
+                        <Label layoutX="105.0" layoutY="225.0" text="Width:" />
+                        <Label layoutX="105.0" layoutY="260.0" text="x:" />
+                        <Label layoutX="100.0" layoutY="282.0" text="y:" />
+                        <Slider fx:id="lenght" layoutX="191.0" layoutY="199.0" majorTickUnit="10.0" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="widht" layoutX="191.0" layoutY="227.0" majorTickUnit="10.0" showTickLabels="true" showTickMarks="true" />
+                        <Slider layoutX="191.0" layoutY="261.0" majorTickUnit="10.0" showTickLabels="true" showTickMarks="true" fx:id="x" />
+                        <Slider fx:id="y" layoutX="191.0" layoutY="292.0" majorTickUnit="10.0" showTickLabels="true" showTickMarks="true" />
+                        <Button fx:id="ok" layoutX="222.0" layoutY="332.0" mnemonicParsing="false" text="Ok" />
+                        <Button fx:id="drawBT" layoutX="324.0" layoutY="332.0" mnemonicParsing="false" text="Draw" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane fx:id="anchorpane2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>
